@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping package="com.szt.model">
+   <class name="User" table="User">
+   	<id name="id">
+    <!-- <generator class="org.hibernate.id.TableHiLoGenerator">
+    </generator> -->
+    <generator class="org.hibernate.id.IncrementGenerator">
+    </generator> 
+   	</id>
+   	<property name="name" ></property>
+    <property name="age" ></property>
+    <property name="date"></property>
+    <property name="address"></property>
+    <property name="city"></property>
+    <property name="zip"></property>
+    <property name="state"></property>
+   	
+   </class>
+   
+</hibernate-mapping>
